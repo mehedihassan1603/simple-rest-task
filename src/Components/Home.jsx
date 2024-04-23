@@ -57,7 +57,7 @@ const Home = () => {
             <div className="card" key={testimonial.id}>
             <h2>Title: {testimonial.title.rendered}</h2>
             <h2>Name:: {testimonial.acf.name}</h2>
-            <h2>testimonial: {testimonial.acf.designation}</h2>
+            <h2>Testimonial: {testimonial.acf.designation}</h2>
             <h2>Details: {testimonial.acf.testimonial_content}</h2>
             </div>
         ))}
@@ -67,7 +67,7 @@ const Home = () => {
         {services.map((service) => (
             <div className="card" key={service.id}>
             <img src={service.acf.service_image} alt="" />
-            <h2>Price: {service.acf.service_summary}</h2>
+            <h2>Details: {service.acf.service_summary}</h2>
             <button><a href={service.acf.button_url}>URL</a></button>
             </div>
         ))}
